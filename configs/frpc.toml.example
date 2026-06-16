@@ -1,0 +1,14 @@
+# FRP Client 配置模板
+# 部署位置: C:\frp\frpc.toml (Windows)
+
+serverAddr = "YOUR_ECS_PUBLIC_IP"
+serverPort = 7000
+auth.method = "token"
+auth.token = "CHANGE_ME_TO_MATCH_SERVER_TOKEN"
+
+[[proxies]]
+name = "windows-ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6022

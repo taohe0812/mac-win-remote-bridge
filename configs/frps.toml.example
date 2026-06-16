@@ -1,0 +1,6 @@
+# FRP Server 配置模板
+# 部署位置: /usr/local/frp/frps.toml (Linux ECS)
+
+bindPort = 7000
+auth.method = "token"
+auth.token = "CHANGE_ME_TO_A_STRONG_TOKEN"

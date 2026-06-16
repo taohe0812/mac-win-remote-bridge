@@ -1,0 +1,11 @@
+# Mac SSH Config 模板
+# 追加到 ~/.ssh/config
+
+Host windev
+    HostName YOUR_ECS_PUBLIC_IP
+    Port 6022
+    User Administrator
+    IdentityFile ~/.ssh/id_rsa
+    StrictHostKeyChecking no
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
